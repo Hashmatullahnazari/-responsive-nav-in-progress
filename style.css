@@ -1,0 +1,149 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box
+}
+body
+{
+
+
+font-family: 'Fascinate', cursive;
+font-size: 20px;
+}
+
+nav
+{
+width: 100%;
+background: #D88A8A;
+height: 50px;
+}
+
+
+.logo
+{
+float: left;
+line-height: 50px;
+font-weight: bold;
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+}
+
+nav ul 
+{
+float: right;
+list-style-type: none;
+}
+
+nav ul li 
+{
+display: inline-block;
+
+}
+
+nav ul li a 
+{
+display: block;
+text-decoration: none;
+padding: 0 15px;
+font-size: 16px;
+color: #000;
+line-height: 50px;
+}
+
+nav ul li a:hover
+{
+background: white;
+
+}
+
+a.icon
+{
+display: none;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+.logo
+{
+  float: none;
+}
+
+nav {   
+  height: auto;
+
+}
+
+nav ul 
+{
+  display: none;
+  width: 100%;
+  float: none;
+
+  /*this automatically adjust the heights when changing at to viewport */
+}
+nav ul li 
+{
+  width: 100%;
+
+
+}
+nav ul li a
+{
+
+  padding: 0;
+
+}
+
+nav ul li a:hover
+{
+  background: white;
+
+}
+a.icon {
+  float: right;
+  display: block;
+}
+
+a.icon {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+}
+
+
+
+
+
+.row {
+display: flex;
+
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+flex: 50%;
+padding: px;
+
+
+}
+
+.row:after
+{
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 560px) {
+.column, .row {
+
+  flex-direction:column;
+}
+}
